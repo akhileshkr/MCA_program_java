@@ -1,0 +1,53 @@
+<HTML>
+ <HEAD><TITLE>javascript</TITLE>
+   <SCRIPT Language="JavaScript">
+   function  showlimit()
+   {
+      var num1,num2,num3,num4;
+       num1=document.frmlimit.txt1.value;
+       num2=document.frmlimit.txt2.value;
+       num3=document.frmlimit.txt3.value;
+       num4=document.frmlimit.txt4.value;
+    if(num1=="")
+       {
+          alert("enter the school name");
+           return ;
+       }
+    if(num2=="")
+       {
+           alert("enter the user name");
+           return ;
+        } 
+   if(num3=="")
+        {
+           alert("enter the password");
+           return ;
+         }
+   if(num4=="")
+        {
+           alert("enter the mobile number");
+           return ;
+         }
+    if(isNaN(num4))
+         {
+          alert("must a number");
+          return ;
+         }
+     }
+    </SCRIPT>
+</HEAD>
+ <BODY>
+    <FORM Name="frmlimit">
+     ENTER SCHOOL NAME &nbsp&nbsp&nbsp
+      <INPUT Type="text" name="txt1"><br>
+   USER NAME&nbsp&nbsp&nbsp&nbsp
+       <INPUT Type="text" name="txt2"><br>
+    PASSWORD &nbsp&nbsp&nbsp&nbsp
+        <INPUT Type="password" name="txt3"><br>
+    MOBILE PHONE NUMBER&nbsp&nbsp&nbsp
+        <INPUT Type="text" name="txt4"><br>
+          <INPUT Type="button" value="save" onClick="showlimit()">
+            <INPUT Type="reset" value="clear">
+       </form>
+</body>
+</html>

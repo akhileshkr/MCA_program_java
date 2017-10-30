@@ -1,0 +1,28 @@
+<HTML>
+   <HEAD><TITLE>JAVASCRIPT</TITLE> 
+   <SCRIPT Language="JavaScript">
+     function shownum()
+       {
+          var num;
+          num = document. frmnum.txtnum1.value;
+	if(num%2== 0)   
+	{
+	window.document.frmnum.txtnum2.value="even";
+	}
+          else
+	{
+          window.document.frmnum.txtnum2.value="odd";
+	}
+       } 
+      </SCRIPT>
+ </HEAD >
+    <BODY>  
+          <FORM Name="frmnum">
+         <CENTER>
+            Enter a number
+        <INPUT Type="text" Name="txtnum1"><BR>
+            Number is<INPUT Type="text" Name="txtnum2"><BR>
+             <INPUT Type="button" value="show" onClick = "shownum()">  </CENTER>
+      </FORM>
+ </BODY>
+</HTML>
